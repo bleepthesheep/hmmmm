@@ -47,8 +47,10 @@ func InsertAnotherTNode(root *TreeNodeM, data int) *TreeNodeM {
 	}
 
 	if data < root.Val {
+		// fmt.Println(root.Left)
 		root.Left = InsertAnotherTNode(root.Left, data)
 	} else {
+		// fmt.Println(root.Right)
 		root.Right = InsertAnotherTNode(root.Right, data)
 	}
 
