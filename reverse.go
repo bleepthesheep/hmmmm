@@ -6,7 +6,7 @@ func Reverse(node *NodeAddL) *NodeAddL {
 	for it := node; it != nil; it = it.Next {
 		copy = PushFront(copy, it.Num)
 	}
-	return node
+	return copy
 }
 
 // PushFront q
