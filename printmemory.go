@@ -1,27 +1,33 @@
 package exam
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
 
 // PrintMemory q
 func PrintMemory(arr [10]int) {
 	for i, n := range arr {
 
 		s := getHex(n)
-		fmt.Print(s, " ")
+
+		printString(s)
+
 		if (i+1)%4 == 0 {
-			fmt.Println()
+			z01.PrintRune('\n')
 		}
 	}
-	fmt.Println()
+
+	z01.PrintRune('\n')
 
 	for _, n := range arr {
 		if n >= 32 {
-			fmt.Print(string(n))
+			z01.PrintRune(rune(n))
 		} else {
-			fmt.Print(".")
+			z01.PrintRune('.')
 		}
 	}
-	fmt.Println()
+
+	z01.PrintRune('\n')
 }
 
 func getHex(n int) string {
@@ -48,4 +54,12 @@ func extend(s string) string {
 	}
 
 	return s + " "
+}
+
+func printString(s string) {
+	for _, c := range s {
+		z01.PrintRune(c)
+	}
+
+	// z01.PrintRune('\n')
 }
