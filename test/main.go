@@ -7,6 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(e.Inter("zpadinton", "paqefwtdjetyiytjneytjoeyjnejeyj"))
-	fmt.Println(e.Inter("ddf6vewg64f", "twthgdwthdwfteewhrtag6h4ffdhsd"))
+	fmt.Println(e.SwapBits(byte(65)))
 }
