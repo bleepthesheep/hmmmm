@@ -1,14 +1,13 @@
 package exam
 
-import "fmt"
-
-func AlphaMirror(s string) {
+// AlphaMirror q
+func AlphaMirror(s string) string {
 
 	result := ""
 	for _, c := range s {
-		out := 'a' + ('a' + 25 - c)
+		out := 'a' + ('z' - c)
 		result += string(out)
 	}
 
-	fmt.Println(result)
+	return result
 }
