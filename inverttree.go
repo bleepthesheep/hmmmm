@@ -46,3 +46,30 @@ func InvertTree(root *TNode) *TNode {
 
 	return root
 }
+
+// Print2DTree q
+func Print2DTree(root *TNode, space int) {
+	const count = 6
+
+	// Base case
+	if root == nil {
+		return
+	}
+
+	// Increase distance between levels
+	space += count
+
+	// Process right child first
+	Print2DTree(root.Right, space)
+
+	// Print current node after space
+	// count
+	fmt.Print("\n")
+	for i := count; i < space; i++ {
+		fmt.Print(" ")
+	}
+	fmt.Print(root.Val, "\n")
+
+	// Process left child
+	Print2DTree(root.Left, space)
+}
