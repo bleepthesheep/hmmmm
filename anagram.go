@@ -25,7 +25,5 @@ func IsAnagram(str1, str2 string) bool {
 		}
 	}
 
-	// fmt.Printf("%q %q\n", str1, str2)
-
 	return true
 }
