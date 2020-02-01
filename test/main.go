@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(e.SwapBits(byte(65)))
+	// fmt.Println(e.HiddenP("fgex.;", "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6"))
+	fmt.Println(e.HiddenP("abc", "btarc"))
 }
