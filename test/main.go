@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
-
 	e ".."
 )
 
 func main() {
 	// fmt.Println(e.HiddenP("fgex.;", "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6"))
-	fmt.Println(e.HiddenP("abc", "btarc"))
+	e.PrintMemory([10]int{104, 101, 108, 108, 111, 16, 21, 42})
 }
