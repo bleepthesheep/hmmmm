@@ -22,7 +22,6 @@ func printStr(s string) {
 	for _, c := range s {
 		z01.PrintRune(c)
 	}
-
 }
 
 func rot13(s string) string {
